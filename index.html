@@ -5,18 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="style.css">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <title>Document</title>
 </head>
-<body>
+<body style="font-size: 18px;">
   <div class="wrapper">
-    <header>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores ut incidunt quas vel a, enim cumque architecto eos tempora molestiae eum dolorum quidem maxime esse adipisci nihil voluptates, animi, qui!</p>
+    <header class="container-fluid">
+      <h1>Sticky Footer: Works well with Bootstrap</h1>
+      <hr>
     </header>
-    <main>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore dolor, expedita impedit veritatis! Consequatur ex sequi, doloremque eius itaque, quibusdam hic ipsam placeat numquam ipsa nobis. Libero odit labore quod.</p>
+    <main class="container">
+      <div class="col-sm-10 col-offset-1">
+        <h2>Notes</h2>
+        <ul>
+          <li style="padding: 30px">Make sure that you set a height of 100% and a position relative on the html element. This will make sure that you can fix the footer at the bottom of the screen.</li>
+          <li style="padding: 30px">Margin Bottom on the body tag should be equal to the fixed height of your footer so when you absolutely position the footer to the bottom of the page your content won't underlap the footer.</li>
+          <li style="padding: 30px">I got this example from <a href="http://getboostrap.com">http://getboostrap.com</a> but wanted to add a description about it and wanted to simplify it a tid bit.</li>
+        </ul>
+      </div>
     </main>
-    <footer>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium molestiae dolorum numquam esse deleniti quae et consectetur sit amet, vel at dolores corporis, maiores velit, sapiente est mollitia, error facilis?</p>
+    <footer class="sticky-footer" style="display:table;">
+      <h1 style="text-align: center; font-size: 80px; display: table-cell; vertical-align: middle;">Sticky Footer</h1>
     </footer>
   </div><!-- wrapper -->
 </body>
